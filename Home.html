@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome image-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" crossorigin="anonymous"></script>
+
+        <style>
+            @keyframes updown{
+                0%,100%{transform :translate(0);}
+                50% {transform: translateY(-10px);}
+            }
+            /*simple utility class you can use like a tailwind class */
+            .animate-updown{
+                animation: updown 1.5s ease-in-out infinite;
+            }
+        </style>
+     
+</head>
+<body>
+            <!-- this is a navbar -->
+    <nav class="p-3 w-full ">
+        <div class="flex bg-green-600 rounded-sm justify-between text-white h-12 items-center">
+            <p class="ml-3 text-center">Call Us Now: 555 377 7872</p>
+            <div class="mr-4 ">
+                <a href="https://www.facebook.com"  target="_blank" class="text-white text-2xl hover:text-blue-300 transition mr-1">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com" class="text-2xl hover:text-blue-300 mr-1"><i class="fa-brands fa-square-instagram" ></i></a>
+                <a href="https://www.whatsapp.com" class="text-2xl hover:text-blue-300 mr-1"><i class="fa-brands fa-square-whatsapp"></i></i></a>
+                <a href="https://www.twitter.com" class="text-2xl hover:text-blue-300 mr-1"><i class="fa-brands fa-square-twitter"></i></i></a>
+                
+
+            </div>
+        </div>
+    </nav>
+
+<!--  we have check of code 41 to 125 and , and check its where is the error -->
+<!-- <div class="bg-gray-100 shadow-md p-3"> -->
+  <!-- Top Navbar -->
+  <!-- <div class="flex justify-center items-center"> -->
+    <!-- Logo -->
+    <!-- <div class="flex justify-center items-center">
+      <img src="Image/logo.webp" alt="logo" class="w-40 sm:w-60">
+    </div> -->
+
+    <!-- Menu Button (visible only on small screens) -->
+    <!-- <button 
+      class="sm:hidden p-2 rounded-md bg-green-600 text-white hover:bg-green-700"
+      onclick="toggleMenu()"
+    > -->
+      <!-- Hamburger Icon -->
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+     Navbar Links (hidden on small screens) -->
+    <!-- <div class="hidden sm:flex justify-center items-center gap-7 font-bold text-lg font-serif">
+      <a href="Home.html" class="hover:text-blue-400">Home</a>
+      <a href="about.html" class="hover:text-blue-400">About</a>
+      <a href="contact.html" class="hover:text-blue-400">Contact Us</a>
+    </div>
+  </div> --> 
+
+  <!-- Mobile Menu (shows only when toggled) -->
+  <!-- <div id="mobileMenu" class="hidden sm:hidden flex flex-col items-center gap-4 mt-4 font-bold text-lg font-serif">
+    <a href="Home.html" class="hover:text-blue-400">Home</a>
+    <a href="about.html" class="hover:text-blue-400">About</a>
+    <a href="contact.html" class="hover:text-blue-400">Contact Us</a>
+  </div>
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("hidden");
+  }
+</script>  -->
+<div class="lg:hidden md:hidden xl:hidden sm:hidden shadow-md p-3">
+  <!-- Navbar Container -->
+  <div class="flex justify-between items-center">
+    <!-- Logo -->
+    <div class="flex items-center">
+      <img src="Image/logo.webp" alt="logo" class="w-32 sm:w-48">
+    </div>
+
+    <!-- Menu Button (visible only on small screens) -->
+    <button 
+      class="sm:hidden p-2 rounded-md"
+      onclick="toggleMenu()"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Navbar Links (visible on sm and above) -->
+    <div class="hidden sm:flex items-center gap-5 font-bold text-lg font-serif">
+      <a href="Home.html" class="hover:text-blue-400">Home</a>
+      <a href="about.html" class="hover:text-blue-400">About</a>
+      <a href="contact.html" class="hover:text-blue-400">Contact Us</a>
+    </div>
+  </div>
+
+  <!-- Mobile Menu (shows when toggled) -->
+  <div id="mobileMenu" class="hidden sm:hidden flex flex-col items-center gap-4 mt-4 font-bold text-lg font-serif">
+    <a href="Home.html" class="hover:text-blue-400">Home</a>
+    <a href="about.html" class="hover:text-blue-400">About</a>
+    <a href="contact.html" class="hover:text-blue-400">Contact Us</a>
+  </div>
+</div>
+
+
+
+
+<script>
+  function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("hidden");
+  }
+</script>
+
+
+      <div>
+        <div class="flex justify-center items-center sm:flex hidden" >
+           <img src="Image/logo.webp" alt="logo" class="items-center w-60">
+
+        </div>
+        <div class="flex justify-center  items-center gap-7 mt-4 font-bold text-lg font-serif mb-3 sm:flex hidden ">
+            <a href="Home.html" class="hover:text-blue-300">Home</a>
+            <a href="about.html" class="hover:text-blue-300">about</a>
+            <a href="contact.html" class="hover:text-blue-300">contacts Us</a>
+        </div>
+      </div>
+
+
+    <div class="flex justify-center items-center bg-gray-100">
+    <div class="w-full h-[400px] sm:h-[560px] md:h-[600px] bg-[url('Image/img1.jpg')] bg-cover bg-center  shadow-lg">
+        <h1 class="text-white text-center mt-16 font-bold text-4xl">GARDEN CARE <br> is our true <br> passion!</h1>
+        <p class="text-white text-center mt-9 font-serif">SO WHENEVER YOU JUST FEEL YOU NEED <br> A PROFESSIONAL HELPING HAND AT <br> YOUR GARDEN, CALL US UP!</p>
+            <div class="flex justify-center">
+                <button class="text-white border mt-16 rounded-xl text-center w-32 hover:text-green-600 animate-updown   duration-7000  ">find Out More</button>
+            </div>
+    </div>
+    </div>
+
+
+
+
+    <div class="flex justify-center w-full  ">
+        <div class="flex flex-col items-center bg-[url('Image/img7.jpg')] bg-cover bg-center bg-red-200 w-[33.33%] h-[300px] ">
+            <img src="Image/img4 (3).png" alt="" class="max-w-[80%] max-h-[80%] mt-[60px] ">
+              <h1 class=" mt-3">BEST PRACTICING</h1>
+           
+            
+        </div>
+
+       <div class=" flex flex-col items-center bg-[url('Image/img8.jpg')] bg-cover bg-center bg-red-200 w-[33.33%] h-[300px]">
+         <div class=""><img src="Image/img5 (1).png" alt="" class="text-center mt-[60px]" ></div>
+         <h1 class="mt-5">FIRST PLACE</h1>
+        </div>
+
+       <div class=" flex flex-col items-center bg-[url('Image/img7.jpg')] bg-cover bg-center bg-red-200 w-[33.33%] h-[300px]"> 
+        <div class=""><img src="Image/img6 (1).png" alt="" class="text-center mt-[60px]" ></div>
+        <h1 class="mt-6">RANGE OF SERVICES</h1>
+       </div>
+
+    </div>
+
+
+
+
+  <div class="w-full h-[400px] bg-[url('Image/img10.jpg')] bg-cover bg-center flex items-center justify-center text-white">
+  <div class="text-center text-black ">
+    <h1 class="text-4xl font-bold mb-4 ml-[250px] " >Why Energico?</h1>
+    <h2 class="text-2xl leading-snug ml-[290px] text-gray-900 text">
+      Welcome To The Top Rated <br> Exterior Design Company
+    </h2>
+    <p class="leading-snug ml-[390px] mt-4">After years of practical (both personal and  work-related) 
+        experience at hand, our team of passionate gardeners is your
+        only option!</p>
+        <button class="bg-yellow-400 rounded-xl  ml-[200px] mt-10 w-[150px] h-10 hover:bg-yellow-500">FIND OUT MORE</button>
+  </div>
+</div>
+
+
+
+
+ <div class="w-full h-[400px] bg-[url('Image/img11.jpg')] bg-cover bg-center flex  text-white">
+  <div>
+    <h1 class="font-bold text-left ml-[80px] mt-[20%] text-6xl "><span class="text-yellow-400 mb-4 ">CREATE</span> <br> The Perfect Garden!</h1>
+    <button class="ml-[13%] mt-12 border bg-green-600 w-[170px] rounded-xl h-8">FIND OUT MORE</button>
+  </div>
+
+</div>
+
+
+
+
+
+<div>
+     <div class="  h-[400px] bg-[url('Image/img12.jpg')] bg-cover bg-center flex  text-white">
+        <div class="ml-[100px]">
+        <h1 class="text-black font-bold mt-[70px] text-4xl ">Perform to the <br> highest Standards</h1>
+        <p class="text-black  mt-2 text-2xl">With all kinds of garden design/care, <br> plant in our range, we're your <br> natural choice!</p>
+            <button class="text-black mt-9 border  w-[170px] rounded-xl h-8">GET A QUOTE</button>
+        </div>
+     </div>
+</div>
+
+
+
+
+    <section class="py-3 bg-gray-200 h-full">
+    <div class="text-center mb-8">
+      <h1 class="text-4xl font-extrabold text-gray-900">Our Advantages</h1>
+    </div>
+   
+
+    <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 text-center lg:h-[700px]">
+      
+      <!-- Card 1 -->
+      <div class=" p-8 hover:shadow-lg transition">
+        <div class="flex justify-center mb-8">
+          <img src="Image/img13.png" alt="Creative Ideas" class="w-16 h-16">
+        </div>
+        <h2 class="text-xl font-bold text-green-600 mb-2">CREATIVE IDEAS</h2>
+        <p class="text-gray-600 text-sm">
+          Serving everyone from household owners to hotels and offices, we make sure to provide a truly full-cycle range of exterior design, landscaping, and remodeling services!
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class=" hover:shadow-lg transition ">
+        <div class="flex justify-center mb-8 ">
+          <img src="Image/img15.png" alt="Decorating" class="w-16 h-16">
+        </div>
+        <h2 class="text-xl font-bold text-green-600 mb-2">DECORATING</h2>
+        <p class="text-gray-600 text-sm">
+          It does not really matter if it’s Christmas or not — priming your house with decorative elements or masonry should not and is not a seasonal fad!
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="p-8 hover:shadow-lg transition">
+        <div class="flex justify-center mb-8">
+          <img src="Image/img17.png" alt="Quality Service" class="w-16 h-16">
+        </div>
+        <h2 class="text-xl font-bold text-green-600 mb-2">QUALITY SERVICE</h2>
+        <p class="text-gray-600 text-sm">
+          We provide top-notch service from start to finish, ensuring every project exceeds your expectations with precision and care.
+        </p>
+      </div>
+
+           <div class="p-8 hover:shadow-lg transition">
+        <div class="flex justify-center mb-8">
+          <img src="Image/img14 - Copy.png" alt="Quality Service" class="w-16 h-16">
+        </div>
+        <h2 class="text-xl font-bold text-green-600 mb-2">QUALITY SERVICE</h2>
+        <p class="text-gray-600 text-sm">
+          We provide top-notch service from start to finish, ensuring every project exceeds your expectations with precision and care.
+        </p>
+      </div>
+
+           <div class=" p-8 hover:shadow-lg transition">
+        <div class="flex justify-center mb-8">
+          <img src="Image/img16.png" alt="Quality Service" class="w-16 h-16">
+        </div>
+        <h2 class="text-xl font-bold text-green-600 mb-2">QUALITY SERVICE</h2>
+        <p class="text-gray-600 text-sm">
+          We provide top-notch service from start to finish, ensuring every project exceeds your expectations with precision and care.
+        </p>
+      </div>
+
+           <div class=" p-8 hover:shadow-lg transition">
+        <div class="flex justify-center mb-8">
+          <img src="Image/img18.png" alt="Quality Service" class="w-16 h-16">
+        </div>
+        <h2 class="text-xl font-bold text-green-600 mb-2">QUALITY SERVICE</h2>
+        <p class="text-gray-600 text-sm">
+          We provide top-notch service from start to finish, ensuring every project exceeds your expectations with precision and care.
+        </p>
+      </div>
+
+    </div>
+ </section>
+
+
+
+
+
+ <div class="flex justify-center  ">
+        <h1 class=" text-5xl mt-6 mb-6 font-bold sm:ml-[50px] sm:text-center text-gray-600">See the Tips & Tricks for  Gardeners on Our Blog!</h1>
+ </div> 
+
+
+ 
+
+        <div class="  p-10 flex justify-between ">
+            <div class="grid grid-cols-2 gap-8">
+                <div >
+                    <img src="Image/img21.jpg" alt="">
+                    <h1 class="mt-8 font-bold mb-5 text-2xl text-gray-600">THE LESS CHEMICALS YOU USE, THE BETTER!</h1>
+                    <p class="text-lg  text-gray-500">So, we guess that if you're reading this blog entry now, you are an avid gardener yourself, right? Which in turn means that as we're talking about the ways to compost your garden, the more you should be listening.</p>
+
+                </div>
+                
+                <div>
+                    <img src="Image/img20.jpg" alt="">
+                    <h1 class="mt-8 font-bold mb-5 text-2xl text-gray-600">THE LESS CHEMICALS YOU USE, THE BETTER!</h1>
+                    <p class="text-lg text-gray-500 ">So, we guess that if you're reading this blog entry now, you are an avid gardener yourself, right? Which in turn means that as we're talking about the ways to compost your garden, the more you should be listening.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- <footer class=" w-full bg-black "> -->
+            <div class="flex justify-center items-center h-[250px] w-full bg-black">
+                <div class="text-center mt-3">
+                      <img src="Image/logo.webp" alt=""> <div class="mr-4 ">
+                        <div class="mt-5 gap-3 ml-3">
+                <a href="https://www.facebook.com"  target="_blank" class="text-white text-2xl hover:text-blue-300 transition mr-1 ">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com" class="text-2xl hover:text-blue-300 mr-1 text-white m-3"><i class="fa-brands fa-square-instagram" ></i></a>
+                <a href="https://www.whatsapp.com" class="text-2xl hover:text-blue-300 mr-1 text-white m-3"><i class="fa-brands fa-square-whatsapp"></i></i></a>
+                <a href="https://www.twitter.com" class="text-2xl hover:text-blue-300 mr-1 text-white m-3"><i class="fa-brands fa-square-twitter"></i></i></a>
+                </div>
+                <p class="text-white mt-4 ml-8">Energico © 2022 · Privacy Policy</p>
+
+            </div>
+                </div>
+               
+
+            </div>
+
+        <!-- </footer> -->
+
+    
+
+
+
+    
+</body>
+</html>
